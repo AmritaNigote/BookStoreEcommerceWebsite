@@ -1,71 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header"/>
 
-
-<title>Amrita BookStore Website</title>
-
-<!-- Bootstrap core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="/css/non-responsive.css" rel="stylesheet">
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="../../assets/css/ie10-viewport-bug-workaround.css"
-	rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="/css/style.css" rel="stylesheet">
-
-<link rel="icon" href="/image/A.jpg" />
-</head>
 
 <body>
-
-	<div class="page-top" style="height: 20px; background-color: #f46b42;">
-	</div>
-
-	<!-- Static navbar -->
-	<nav class="navbar navbar- default navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-
-				<a class="navbar-brand" href="#">AMRITA'S BOOKSTORE</a>
-			</div>
-			<div id="navbar">
-				<ul class="nav navbar-nav navbar-left">
-
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">BOOKS <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Browse the bookshelf</a></li>
-							<li><a href="#">Store hours &#38; Directions</a></li>
-							<li><a href="#">FAQ</a></li>
-
-						</ul></li>
-					<form class="navbar-form">
-						<div class="form-group">
-							<input type="text" name="keyword" class="form-control"
-								placeholder="Book title" />
-						</div>
-						<button type="submit" class="btn btn-default">Search</button>
-					</form>
-
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li ><a href="#">SHOPPING CART</a>a></li>
-					<li><a href="#">MY ACCOUNT</a></li>
-					<li><a href="#">LOGOUT</a></li>
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-		<!--/.container-fluid -->
-	</nav>
+<div th:replace ="common/header::navbar "/>
+	
 
 	<div class="container">
 		<div class="row">
@@ -99,7 +40,7 @@
 									<h4>Java Guide</h4>
 									<p>Constructor is a block of code that initializes the
 										newly created object. A constructor resembles an instance
-										method in java but it‚Äôs not a method as it doesn‚Äôt have a
+										method in java but itís not a method as it doesnít have a
 										return type. In short constructor and method are
 										different(More on this at the end of this guide). People often
 										refer constructor as special type of method in Java.</p>
@@ -110,8 +51,8 @@
 										alt="..." />
 									<div class="carousel-caption">...</div>
 									<h4>Psychology Today and Forever</h4>
-									<p>f you ever find yourself in the wrong story, leave.‚Äù
-										‚ÄúPerhaps the greatest faculty our minds possess is the ability
+									<p>f you ever find yourself in the wrong story, leave.î
+										ìPerhaps the greatest faculty our minds possess is the ability
 										to cope with pain. Classic thinking teaches us of the four
 										doors of the mind, which everyone moves through according to
 										their need.</p>
@@ -258,18 +199,6 @@
 		<!-- end of container -->
 
 
-
-
-		<!-- Bootstrap core JavaScript
-    ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script>
-			window.jQuery
-					|| document
-							.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-		</script>
-		<script src="/js/bootstrap.min.js"></script>
+<div th:replace ="common/header :: body-bottom-scripts"/>
 </body>
 </html>
