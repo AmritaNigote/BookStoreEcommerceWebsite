@@ -1,7 +1,10 @@
 # BookStoreEcommerceWebsite
-Main Git
+<<<<<<< HEAD
 Hello
 Hi
+=======
+Main Git
+>>>>>>> d06c2f0fc36c49fa4868706143632ace56c13c11
  This E-Commerce website is build using modern Java Full Stack technologies. Specifically, it's about building an online bookstore.
 
  Modified Today
